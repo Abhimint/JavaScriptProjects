@@ -1,0 +1,37 @@
+var user = prompt("What kind of driver are you? (STREET/DRAG/FAMILY-MAN)").toUpperCase();
+
+switch(user){
+    
+    case 'STREET' :
+        var car = prompt("Do you have a sweet ride? (YES/NO)").toUpperCase();
+        var streetLegal = prompt("Is is street legal? (YES/NO)").toUpperCase();
+        if(car && streetLegal){
+            console.log("Sweet..let's race then!");
+        }else{
+            console.log("I am sorry man, better luck next time!");
+        }
+        break;
+        
+    case 'DRAG' :
+        var driveCar = prompt("Do you drive? (YES/NO)").toUpperCase();
+        var kindOfCar = prompt("Do you have a Muscle car? (YES/NO)").toUpperCase();
+        if(driveCar && kindOfCar){
+            console.log("Can't wait to bring you down bro!");
+        }else{
+            console.log("Next time, don't waste my time!")
+        }
+        break;
+        
+    case 'FAMILY-MAN' : 
+        var family = prompt("Do you have a family who depends on you? (YES/NO)").toUpperCase();
+        var loveFamily = prompt("Do you love your family? (YES/NO)").toUpperCase();
+        if(family || loveFamily){
+            console.log("All respects to you man, family men are REAL men!");
+        }else{
+            console.log("Then get the grease on your hands man, coz we're about to race!");
+        }
+        break;
+        
+    default : 
+    console.log("I am sorry pal, I didn't understand what you said!");
+}

@@ -1,0 +1,37 @@
+var friends = {
+    bill : {
+        firstName : "Bill",
+        lastName : "Will",
+        number : "(416)-222-3333",
+        interests : ["Base-jumping" , "DJaying" , "Spelunking"],
+        address : ["Wysteria Lane" , "Toronto, ON" , "M19W2K"]
+    },
+    
+    steve : {
+        firstName : "Steve",
+        lastName : "Stew",
+        number : "(905)-888-9999",
+        interests : ["Reading" , "Writing" , "Balet Enthusiast"],
+        address : ["Peeley Crescent" , "Toronto, ON" , "M2F2Z1"]
+    }
+};
+
+var list = function(single){
+  
+  for(var bill in friends){
+    console.log(bill);
+  }  
+  
+  for(var steve in friends){
+      console.log(steve);
+  }
+};
+
+var search = function(name){
+    for(var property in friends){
+        if(name === friends[property].firstName){
+            console.log(friends[property])
+            return friends[property];
+        }
+    }
+};
